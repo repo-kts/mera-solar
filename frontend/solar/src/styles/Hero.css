@@ -75,11 +75,19 @@
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 36px;
+        font-size: 32px;
+        padding: 0 10px;
+        word-wrap: break-word;
     }
 
     .hero-subtitle {
         font-size: 16px;
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 28px;
     }
 }
