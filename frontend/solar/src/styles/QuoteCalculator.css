@@ -100,7 +100,7 @@ input[type="range"] {
 
 @media (max-width: 768px) {
     .quote-calculator {
-        margin: 0 20px;
+        margin: 0 15px;
         margin-top: -50px;
     }
 
