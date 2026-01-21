@@ -194,25 +194,30 @@ html[data-theme='dark'] .footer-logo .logo-text {
     }
 
     .cta-input-group input {
-        background: white;
-        height: 52px;
-        /* Increased height */
+        background: white !important;
+        height: 52px !important;
+        min-height: 52px !important;
+        line-height: normal !important;
         border-radius: 50px;
         width: 100%;
         padding: 0 24px;
         text-align: center;
-        font-size: 16px;
-        /* Ensure readable font size */
+        font-size: 16px !important;
+        /* Force readable font size */
         color: var(--text-main);
         margin-bottom: 0;
+        -webkit-appearance: none;
+        /* Remove iOS styles */
+        appearance: none;
     }
 
     .cta-input-group button {
         width: 100%;
-        height: 52px;
-        /* Match input height */
+        height: 52px !important;
+        min-height: 52px !important;
         justify-content: center;
         font-size: 16px;
+        border-radius: 50px;
     }
 
     .footer-content {
