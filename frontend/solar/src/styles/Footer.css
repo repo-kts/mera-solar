@@ -163,17 +163,74 @@ html[data-theme='dark'] .footer-logo .logo-text {
 }
 
 @media (max-width: 968px) {
+    .footer-section {
+        padding-top: 60px;
+        /* Reduced top padding */
+    }
+
     .footer-cta {
         flex-direction: column;
         text-align: center;
         gap: 24px;
+        padding: 32px 24px;
+        /* Reduced CTA padding */
+        border-radius: 20px;
+    }
+
+    .footer-cta h2 {
+        font-size: 24px;
+        /* Smaller heading */
     }
 
     .cta-input-group {
         width: 100%;
+        flex-direction: column;
+        /* Stack input and button on small screens */
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        gap: 12px;
+    }
+
+    .cta-input-group input {
+        background: white;
+        height: 48px;
+        border-radius: 50px;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .cta-input-group button {
+        width: 100%;
+        height: 48px;
+        justify-content: center;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-brand-col p,
+    .footer-col p {
+        margin: 0 auto 24px;
+        /* Center align paragraphs */
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
